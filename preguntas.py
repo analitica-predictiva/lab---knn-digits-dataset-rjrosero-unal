@@ -49,7 +49,7 @@ def pregunta_02():
     # Divida los datos de entrenamiento y prueba. Los conjuntos de datos están
     # estratificados. La semilla del generador de números aleatorios es 42.
     # El tamaño del test es del 20%
-    X_train, X_test, y_train, y_test = KNeighborsClassifier(
+    X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.8, random_state=42, stratify=True
     )
 
